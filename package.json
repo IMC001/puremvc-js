@@ -1,0 +1,29 @@
+{
+  "name": "puremvc",
+  "version": "1.0.1",
+  "description": "A lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern",
+  "main": "bin/puremvc-1.0.1.js",
+  "bin": {
+    "puremvc": "puremvc-1.0.1.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMC001/puremvc-js-multicore-framework.git"
+  },
+  "keywords": [
+    "puremvc",
+    "mvc"
+  ],
+  "author": "Cliff Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IMC001/puremvc-js-multicore-framework/issues"
+  },
+  "homepage": "https://github.com/IMC001/puremvc-js-multicore-framework"
+}
