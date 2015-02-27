@@ -10,7 +10,7 @@
   },
   "_source": "git://github.com/IMC001/puremvc-js.git",
   "_target": "~1.0.1",
-  "_originalSource": "",
+  "_originalSource": "IMC001/puremvc-js",
   "_direct": true,
   "authors": [
     "Cliff Hall"
@@ -24,12 +24,8 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
     "build",
-    "src"
+    "src",
+    "test"
   ]
 }
