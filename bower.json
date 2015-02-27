@@ -10,7 +10,7 @@
   },
   "_source": "git://github.com/IMC001/puremvc-js-multicore-framework.git",
   "_target": "~1.0.1",
-  "_originalSource": "git://github.com/PureMVC/puremvc-js-multicore-framework.git",
+  "_originalSource": "",
   "_direct": true,
   "authors": [
     "Cliff Hall"
