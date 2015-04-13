@@ -1,3 +1,6 @@
+## NOTE
+This fork of the official PureMVC repository was updated to be CommonJS compatible.
+
 ## [PureMVC](http://puremvc.github.com/) JavaScript MultiCore Framework
 PureMVC is a lightweight framework for creating applications based upon the classic [Model-View-Controller](http://en.wikipedia.org/wiki/Model-view-controller) design meta-pattern. This is a JavaScript port of the [AS3 reference implementation of the MultiCore Version](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki). It supports [modular programming](http://en.wikipedia.org/wiki/Modular_programming) through the use of [Multiton](http://en.wikipedia.org/wiki/Multiton) Core actors.
 
