@@ -6,20 +6,13 @@
  * http://creativecommons.org/licenses/by/3.0/us/
  * @author david.foley@puremvc.org 
  */
-(function (scope){
-	
-	if (null == scope)
-	    scope= window;
-	
-	// if the global puremvc namespace already exists, turn back now
-	if (scope.puremvc)
-	{
-		return;
-	}
+ 
+;(function(scope) {
 
  	/* implementation begin */
 	
 	
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -278,6 +271,7 @@ Notification.prototype.type= null;
  * @private
  */
 Notification.prototype.body= null;
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -416,6 +410,7 @@ Notifier.prototype.multitonKey = null;
  * @type string
  */
 Notifier.MULTITON_MSG = "multitonKey for this Notifier not yet initialized!";
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -556,6 +551,7 @@ MacroCommand.prototype.execute= function(note)
         cmd.execute(note);
     }
 };
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -726,6 +722,7 @@ Mediator.prototype.mediatorName= null;
  * @type Object
  */
 Mediator.prototype.viewComponent=null;
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -842,6 +839,7 @@ Proxy.prototype.proxyName= null;
  * @type Object
  */
 Proxy.prototype.data= null;
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -1318,6 +1316,7 @@ Facade.instanceMap = [];
  * @static
  */
 Facade.MULTITON_MSG = "Facade instance for this Multiton key already constructed!";
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -1647,6 +1646,7 @@ View.prototype.multitonKey = null;
  * @static
  */
 View.MULTITON_MSG = "View instance for this Multiton key already constructed!";
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -1834,6 +1834,7 @@ Model.prototype.multitonKey;
  * @type {string}
  */
 Model.MULTITON_MSG= "Model instance for this Multiton key already constructed!";
+
 /**
  * @author PureMVC JS Native Port by David Foley, Frédéric Saunier, & Alain Duchesneau 
  * @author Copyright(c) 2006-2012 Futurescale, Inc., Some rights reserved.
@@ -2440,25 +2441,27 @@ function define (classInfo, traits, staticTraits)
 };
 
 
+
 	
  	/* implementation end */
  	 
- 	// define the puremvc global namespace and export the actors
- 	scope.puremvc=
- 	{
- 		View: View
- 	,	Model: Model
- 	,	Controller: Controller
- 	,	SimpleCommand: SimpleCommand
- 	,	MacroCommand: MacroCommand
- 	,	Facade: Facade
- 	,	Mediator: Mediator
- 	,	Observer: Observer
- 	,	Notification: Notification
- 	,	Notifier: Notifier
- 	,	Proxy: Proxy
- 	,	define: define
- 	,	declare: declare
- 	}; 
+ 	// export the actors
+ 	scope.View = View;
+ 	scope.Model = Model;
+ 	scope.Controller = Controller;
+ 	scope.SimpleCommand = SimpleCommand;
+ 	scope.MacroCommand = MacroCommand;
+ 	scope.Facade = Facade;
+ 	scope.Mediator = Mediator;
+ 	scope.Observer = Observer;
+ 	scope.Notification = Notification;
+ 	scope.Notifier = Notifier;
+ 	scope.Proxy = Proxy;
+ 	scope.define = define;
+ 	scope.declare = declare;
  	
-})(this); // the 'this' parameter will resolve to global scope in all environments
+})(
+    typeof module === 'object' && typeof module.exports === 'object' ? exports : 
+    this.puremvc || (this.puremvc = {})
+);
+

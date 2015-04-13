@@ -6,16 +6,8 @@
  * http://creativecommons.org/licenses/by/3.0/us/
  * @author david.foley@puremvc.org 
  */
-(function (scope){
-	
-	if (null == scope)
-	    scope= window;
-	
-	// if the global puremvc namespace already exists, turn back now
-	if (scope.puremvc)
-	{
-		return;
-	}
+ 
+;(function(scope) {
 
  	/* implementation begin */
 	
