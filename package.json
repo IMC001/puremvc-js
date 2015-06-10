@@ -1,0 +1,15 @@
+{
+  "name": "puremvc-js",
+  "version": "",
+  "license": "",
+  "filename": "puremvc.js",
+  "description": "puremvc",
+  "homepage": "",
+  "keywords": [
+    "puremvc"
+  ],
+  "main": "bin/puremvc.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
