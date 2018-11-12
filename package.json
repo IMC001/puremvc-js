@@ -1,10 +1,10 @@
 {
   "name": "puremvc-js",
-  "version": "",
-  "license": "",
+  "version": "1.0.1",
+  "license": "MIT",
   "filename": "puremvc.js",
   "description": "puremvc",
-  "homepage": "",
+  "homepage": "https://github.com/IMC001/puremvc-js",
   "keywords": [
     "puremvc"
   ],
